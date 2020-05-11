@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="./img/logo.svg" alt="" class="header-logo">
+            <a href="#" class="logout">
+                <p class="logout__user-name">AdminAdmin</p>
+                <p class="logout__btn">Выйти</p>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="catalog-block">
+                <p class="main-title">каталог продукции ac-step</p>
+
+                <div id="accordion">
+                    <div>
+                        <div class="card-header">
+                            <a href="#collapse1" data-toggle="collapse" class="acordion-link" aria-expanded="true" aria-controls="collapse1">
+                                женская коллекция
+                                <img src="./img/arrow.svg" alt="" class="card-header__img">
+                            </a>
+
+                        </div>
+                        <div id="collapse1" class="collapse show" data-parent="#accordion">
+                            <a href="" class="collapse__link">Подошва</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-header">
+                            <a href="#collapse2" data-toggle="collapse" class="acordion-link collapsed" aria-expanded="true" aria-controls="collapse2">
+                                мужская коллекция
+                                <img src="./img/arrow.svg" alt="" class="card-header__img">
+                            </a>
+
+                        </div>
+                        <div id="collapse2" class="collapse" data-parent="#accordion">
+                            <a href="" class="collapse__link">Подошва</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-header">
+                            <a href="#collapse3" data-toggle="collapse" class="acordion-link collapsed" aria-expanded="true" aria-controls="collapse3">
+                                детская коллекция
+                                <img src="./img/arrow.svg" alt="" class="card-header__img">
+                            </a>
+
+                        </div>
+                        <div id="collapse3" class="collapse" data-parent="#accordion">
+                            <a href="" class="collapse__link">Подошва</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
